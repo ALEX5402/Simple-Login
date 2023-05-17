@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Main_dark_backgrund"
+    tools:context=".activity.Login"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+>
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:foreground="@drawable/overlay"
+        android:rotation="-20"
+        android:scaleType="centerInside"
+        android:src="@drawable/beans"
+        app:layout_constraintBottom_toTopOf="@+id/imgView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="152dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:foreground="@drawable/overlay"
+        android:rotation="40"
+        android:scaleType="centerInside"
+        android:src="@drawable/beans"
+        app:layout_constraintBottom_toTopOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgView6"
+        app:layout_constraintTop_toBottomOf="@+id/imgView4" />
+
+    <ImageView
+        android:id="@+id/imgView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="22dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:foreground="@drawable/overlay"
+        android:rotation="10"
+        android:scaleType="centerInside"
+        android:src="@drawable/beans"
+        app:layout_constraintBottom_toTopOf="@+id/imgView2"
+        app:layout_constraintEnd_toStartOf="@+id/imgView4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="188dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:foreground="@drawable/overlay"
+        android:scaleType="centerInside"
+        android:src="@drawable/beans"
+        app:layout_constraintBottom_toTopOf="@+id/space"
+        app:layout_constraintEnd_toStartOf="@+id/imgView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgView4" />
+
+    <ImageView
+        android:id="@+id/imgView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:foreground="@drawable/overlay"
+        android:rotation="50"
+        android:scaleType="centerInside"
+        android:src="@drawable/beans"
+        app:layout_constraintBottom_toTopOf="@+id/imgView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgView6"
+        app:layout_constraintTop_toBottomOf="@+id/imgView3" />
+
+    <ImageView
+        android:id="@+id/imgView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="529dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:foreground="@drawable/overlay"
+        android:rotation="-10"
+        android:scaleType="centerInside"
+        android:src="@drawable/beans"
+        app:layout_constraintBottom_toTopOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/round_box"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:onClick="signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="34dp"
+            android:text="Signup !"
+            app:layout_constraintBottom_toTopOf="@+id/space2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="340dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="254dp"
+            android:hint="Username"
+            android:minWidth="340dp"
+            android:minHeight="66dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            android:outlineAmbientShadowColor="@color/black"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/space2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@drawable/user_ic">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textAutoComplete"
+                android:maxLength="21" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="340dp"
+            android:layout_height="66dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginBottom="175dp"
+            android:hint="Password"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+
+            android:minWidth="340dp"
+            android:minHeight="66dp"
+            app:endIconMode="password_toggle"
+            app:layout_constraintBottom_toTopOf="@+id/space2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@drawable/password_ic"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:maxLength="21" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="363dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/space2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/margin" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="332dp"
+            android:text="Sign in to continue."
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/space2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Space
+            android:id="@+id/margin"
+            android:layout_width="21dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:onClick="forgotpassword"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="63dp"
+            android:textColor="@color/gray"
+            android:text="@string/forgot_password"
+            app:layout_constraintBottom_toTopOf="@+id/space2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Loginbutton" />
+
+        <Button
+            android:id="@+id/Loginbutton"
+            android:layout_width="340dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="103dp"
+            android:backgroundTint="@color/Main_dark_backgrund"
+            android:fontFamily="sans-serif-medium"
+            android:text="Log in"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/space2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="13dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/background_logo"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tooltipText="logo Here"
+            app:srcCompat="@mipmap/ic_launcher_adaptive_fore" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
