@@ -1,19 +1,17 @@
 
 # Its a simple login Ui desined by me
 
-
-
-
 ## Support
 
 For support, [Telegram](t.me//alex5402)
 ## Screenshots
 
-![App Screenshot](link)
+![App Screenshot](https://github.com/ALEX5402/Simple-Login/blob/main/demo/Screenshot_20230517_155915.png)
 
-![image](link)
+![image](https://github.com/ALEX5402/Simple-Login/blob/main/demo/Screenshot_20230517_155940.png)
 
-![image2](link)
+![image2](https://github.com/ALEX5402/Simple-Login/blob/main/demo/Screenshot_20230517_160000.png)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
